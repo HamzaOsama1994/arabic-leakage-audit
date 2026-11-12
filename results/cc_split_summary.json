@@ -1,0 +1,65 @@
+{
+  "inputs": {
+    "source_binary_train.csv": "cb615c98762512a6b4b23ba57d9a1b6704c623d6cf6c93515c4dda034145fc28",
+    "source_binary_validation.csv": "32a8d0fef3584695fa71a8249aa9640e63e747ac0ce311985c8048e0b66305ba",
+    "source_binary_test.csv": "5ade4f4288977a0f0e9a5f1b7b1955b83290e90f389192223cfae5efa0059100"
+  },
+  "seed": 42,
+  "min_evidence_chars": 40,
+  "rebuilt": {
+    "pool": 25115,
+    "dedup": 19927,
+    "components": 17069,
+    "largest_component": 27,
+    "test": 4000,
+    "validation": 2000,
+    "train": 13927,
+    "unassigned": 0
+  },
+  "paper": {
+    "pool": 25649,
+    "dedup": 20222,
+    "components": 16591,
+    "train": 13999,
+    "validation": 2000,
+    "test": 4000,
+    "unassigned": 223
+  },
+  "labels": {
+    "test": {
+      "Fake": 2091,
+      "Real": 1909
+    },
+    "validation": {
+      "Fake": 1051,
+      "Real": 949
+    },
+    "train": {
+      "Fake": 7393,
+      "Real": 6534
+    }
+  },
+  "sources_test": {
+    "VERA-ARAB": 3246,
+    "ArCOV19-tweets": 574,
+    "AraStance": 153,
+    "ArCOV19-claims": 27
+  },
+  "overlap_must_be_zero": {
+    "test|validation": {
+      "claims": 0,
+      "components": 0,
+      "evidence_40plus": 0
+    },
+    "test|train": {
+      "claims": 0,
+      "components": 0,
+      "evidence_40plus": 0
+    },
+    "train|validation": {
+      "claims": 0,
+      "components": 0,
+      "evidence_40plus": 0
+    }
+  }
+}

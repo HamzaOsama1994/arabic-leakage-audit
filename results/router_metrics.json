@@ -1,0 +1,189 @@
+{
+  "sizes": {
+    "train": 13927,
+    "validation": 2000,
+    "test": 4000
+  },
+  "per_model_test": {
+    "svm": {
+      "accuracy": 0.853,
+      "macro_f1": 0.8526241547506528
+    },
+    "bilstm": {
+      "accuracy": 0.858,
+      "macro_f1": 0.857961329972085
+    },
+    "marbert_probe": {
+      "accuracy": 0.779,
+      "macro_f1": 0.7781052649546132
+    }
+  },
+  "calibration": {
+    "bilstm_T": 2.760208606604769,
+    "marbert_T": 0.8015196499861391,
+    "svm_platt": [
+      2.659711215372646,
+      -0.08352502505542306
+    ]
+  },
+  "novelty_thresholds_val_p80_p95": [
+    0.26789997816085814,
+    0.3717792600393295
+  ],
+  "novelty_share_test": {
+    "Familiar": 0.7942,
+    "Moderate": 0.155,
+    "High": 0.0508
+  },
+  "agreement": {
+    "agree_rate": 0.733,
+    "agree_acc": 0.9273533424283765,
+    "split_majority_acc": 0.6882022471910112,
+    "svm_acc_on_split": 0.648876404494382
+  },
+  "operating_points": {
+    "trust@0.7": {
+      "tau": 0.6923840906200951,
+      "coverage": 0.72375,
+      "selective_accuracy": 0.9416234887737478,
+      "ci95": {
+        "coverage": [
+          0.7068222019278322,
+          0.7396931693116058
+        ],
+        "selective_accuracy": [
+          0.9323981931509477,
+          0.9509723082683732
+        ]
+      }
+    },
+    "trust@0.8": {
+      "tau": 0.5919668222118809,
+      "coverage": 0.825,
+      "selective_accuracy": 0.9157575757575758,
+      "ci95": {
+        "coverage": [
+          0.811248115267363,
+          0.8380139581086274
+        ],
+        "selective_accuracy": [
+          0.9039080272001113,
+          0.926280520763089
+        ]
+      }
+    },
+    "trust@0.9": {
+      "tau": 0.444357173326766,
+      "coverage": 0.90425,
+      "selective_accuracy": 0.8849875587503456,
+      "ci95": {
+        "coverage": [
+          0.8940560425828672,
+          0.9137055940832952
+        ],
+        "selective_accuracy": [
+          0.8727611952895019,
+          0.896723337333657
+        ]
+      }
+    },
+    "trust@1.0": {
+      "tau": -Infinity,
+      "coverage": 1.0,
+      "selective_accuracy": 0.853,
+      "ci95": {
+        "coverage": [
+          1.0,
+          1.0
+        ],
+        "selective_accuracy": [
+          0.8399401360435632,
+          0.8655651372639995
+        ]
+      }
+    },
+    "svm_only@0.7": {
+      "tau": 0.8038355094700801,
+      "coverage": 0.7065,
+      "selective_accuracy": 0.9416135881104034,
+      "ci95": {
+        "coverage": [
+          0.689134713270757,
+          0.7241977762866038
+        ],
+        "selective_accuracy": [
+          0.9319514681140724,
+          0.9506522130290825
+        ]
+      }
+    },
+    "svm_only@0.8": {
+      "tau": 0.7224027099571685,
+      "coverage": 0.80475,
+      "selective_accuracy": 0.9173656415035726,
+      "ci95": {
+        "coverage": [
+          0.790324610372302,
+          0.8194985379421302
+        ],
+        "selective_accuracy": [
+          0.9057522109514635,
+          0.9280967498360498
+        ]
+      }
+    },
+    "svm_only@0.9": {
+      "tau": 0.6170421043806091,
+      "coverage": 0.90375,
+      "selective_accuracy": 0.8868603042876901,
+      "ci95": {
+        "coverage": [
+          0.893433888575193,
+          0.9132082680296343
+        ],
+        "selective_accuracy": [
+          0.8744762962416825,
+          0.8986306462991817
+        ]
+      }
+    },
+    "svm_only@1.0": {
+      "tau": -Infinity,
+      "coverage": 1.0,
+      "selective_accuracy": 0.853,
+      "ci95": {
+        "coverage": [
+          1.0,
+          1.0
+        ],
+        "selective_accuracy": [
+          0.8399401360435632,
+          0.8655651372639995
+        ]
+      }
+    }
+  },
+  "paper": {
+    "agree_rate": 0.67,
+    "agree_acc": 0.926,
+    "split_majority_acc": 0.649,
+    "operating_points": {
+      "0.7": [
+        0.727,
+        0.9271
+      ],
+      "0.8": [
+        0.769,
+        0.9265
+      ],
+      "0.9": [
+        0.8735,
+        0.9021
+      ],
+      "1.0": [
+        1.0,
+        0.8645
+      ]
+    }
+  }
+}

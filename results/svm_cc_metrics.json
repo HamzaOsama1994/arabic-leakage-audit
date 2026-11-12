@@ -1,0 +1,31 @@
+{
+  "split": "cc",
+  "sizes": {
+    "train": 13927,
+    "validation": 2000,
+    "test": 4000
+  },
+  "selected": {
+    "C": 1.0,
+    "class_weight": "none",
+    "validation_macro_f1": 0.8486
+  },
+  "test": {
+    "accuracy": 0.8545,
+    "macro_f1": 0.8540257295954556
+  },
+  "ci95": {
+    "accuracy": [
+      0.840629832500801,
+      0.867396803019578
+    ],
+    "macro_f1": [
+      0.8398544924408575,
+      0.8669220528608911
+    ]
+  },
+  "paper": {
+    "accuracy": 0.8645,
+    "macro_f1": 0.864
+  }
+}

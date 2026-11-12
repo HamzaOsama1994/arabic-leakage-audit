@@ -1,0 +1,167 @@
+{
+  "sizes_B": {
+    "train": 13327,
+    "validation": 1919,
+    "test": 3847
+  },
+  "arastance_rows_removed": {
+    "train": 600,
+    "validation": 81,
+    "test": 153
+  },
+  "eval_rows": 3847,
+  "A_full_training": {
+    "per_model": {
+      "svm": {
+        "accuracy": 0.8606706524564596,
+        "macro_f1": 0.8601487881594532,
+        "ece_calibrated": 0.02234420842375776
+      },
+      "bilstm": {
+        "accuracy": 0.8648297374577593,
+        "macro_f1": 0.8647045933508818,
+        "ece_calibrated": 0.01690704034835542
+      },
+      "marbert_probe": {
+        "accuracy": 0.7865869508708084,
+        "macro_f1": 0.7852986331969352,
+        "ece_calibrated": 0.02915721890458026
+      }
+    },
+    "ece_raw": {
+      "bilstm": 0.09171206894743926,
+      "marbert_probe": 0.060489298900652605
+    },
+    "agreement": {
+      "agree_rate": 0.7410969586690928,
+      "agree_acc": 0.9323044545773412,
+      "svm_acc_on_split": 0.6556224899598394
+    },
+    "operating_points": {
+      "trust@0.7": {
+        "coverage": 0.7335586171042371,
+        "selective_accuracy": 0.9443656980864635
+      },
+      "trust@0.8": {
+        "coverage": 0.8312971146347804,
+        "selective_accuracy": 0.9205753595997499
+      },
+      "trust@0.9": {
+        "coverage": 0.9085001299714063,
+        "selective_accuracy": 0.8912732474964234
+      },
+      "trust@1.0": {
+        "coverage": 1.0,
+        "selective_accuracy": 0.8606706524564596
+      },
+      "svm_only@0.7": {
+        "coverage": 0.7197816480374317,
+        "selective_accuracy": 0.9440231130371975
+      },
+      "svm_only@0.8": {
+        "coverage": 0.8125812321289316,
+        "selective_accuracy": 0.9229046705054382
+      },
+      "svm_only@0.9": {
+        "coverage": 0.908240187158825,
+        "selective_accuracy": 0.8932455638236978
+      },
+      "svm_only@1.0": {
+        "coverage": 1.0,
+        "selective_accuracy": 0.8606706524564596
+      }
+    },
+    "calibration": {
+      "bilstm_T": 2.760208606604769,
+      "marbert_T": 0.8015196499861391,
+      "svm_platt": [
+        2.659711215372646,
+        -0.08352502505542306
+      ]
+    }
+  },
+  "B_no_arastance": {
+    "per_model": {
+      "svm": {
+        "accuracy": 0.8617104237067845,
+        "macro_f1": 0.8611746019342452,
+        "ece_calibrated": 0.019953550325924472
+      },
+      "bilstm": {
+        "accuracy": 0.8715882505848713,
+        "macro_f1": 0.870966695002485,
+        "ece_calibrated": 0.012587875941216815
+      },
+      "marbert_probe": {
+        "accuracy": 0.7847673511827398,
+        "macro_f1": 0.7833697227026682,
+        "ece_calibrated": 0.026171254520047826
+      }
+    },
+    "ece_raw": {
+      "bilstm": 0.07594009813222442,
+      "marbert_probe": 0.05553738483315629
+    },
+    "agreement": {
+      "agree_rate": 0.7416168442942552,
+      "agree_acc": 0.9334034349807221,
+      "svm_acc_on_split": 0.6559356136820925
+    },
+    "operating_points": {
+      "trust@0.7": {
+        "coverage": 0.7348583311671433,
+        "selective_accuracy": 0.9451715599575522
+      },
+      "trust@0.8": {
+        "coverage": 0.8149207174421628,
+        "selective_accuracy": 0.927591706539075
+      },
+      "trust@0.9": {
+        "coverage": 0.9048609305952691,
+        "selective_accuracy": 0.8962941683424304
+      },
+      "trust@1.0": {
+        "coverage": 1.0,
+        "selective_accuracy": 0.8617104237067845
+      },
+      "svm_only@0.7": {
+        "coverage": 0.7213413049129191,
+        "selective_accuracy": 0.9466666666666667
+      },
+      "svm_only@0.8": {
+        "coverage": 0.8089420327527944,
+        "selective_accuracy": 0.9267352185089974
+      },
+      "svm_only@0.9": {
+        "coverage": 0.8960228749675071,
+        "selective_accuracy": 0.9007832898172323
+      },
+      "svm_only@1.0": {
+        "coverage": 1.0,
+        "selective_accuracy": 0.8617104237067845
+      }
+    },
+    "calibration": {
+      "bilstm_T": 2.2474800063144893,
+      "marbert_T": 0.7925022916893542,
+      "svm_platt": [
+        2.7008693026396586,
+        -0.12009333720603707
+      ]
+    }
+  },
+  "B_minus_A_ci95": {
+    "svm_accuracy": [
+      -0.003895320293099061,
+      0.00591757958244018
+    ],
+    "trust@0.8_selective_accuracy": [
+      0.0005905704092745656,
+      0.013460732599768589
+    ],
+    "svm_only@0.8_selective_accuracy": [
+      -0.0005148135292663252,
+      0.008332022185329207
+    ]
+  }
+}
