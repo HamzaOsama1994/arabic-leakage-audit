@@ -7,7 +7,7 @@ Selective Prediction and Citation-Constrained Abstention* (Procedia Computer Sci
 ## Status
 
 | Paper result | Reproduced here | Script |
-|---|---|---|
+|---|---|--- |
 | 57.2% of claim-grouped test rows reuse training evidence verbatim | exact | `scripts/leak_check.py` |
 | Linear SVM on the historical claim-grouped split, 87.26% macro-F1 | exact | `scripts/run_svm.py historical` |
 | Leakage-safe connected-component split | rebuilt from the paper's procedure (13,927/2,000/4,000; the original split was 13,999/2,000/4,000) | `scripts/build_cc_split.py` |
